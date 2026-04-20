@@ -27,7 +27,7 @@ async function sendOrder() {
     console.log("Sending Data:", orderData); // Debug check
 
     try {
-        const response = await fetch("http://https://upswing-napkin-prevail.ngrok-free.dev/orders", { // CLEANED URL
+        const response = await fetch("http://https://localhost:5267/orders", { // CLEANED URL
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(orderData)
